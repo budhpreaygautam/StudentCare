@@ -860,7 +860,7 @@ a.socials-item:hover {
   .navbar {
     flex-direction: column;
     transition: all 0.5s ease-out;
-    height: 280px;
+    height: 300px;
 
   }
   /* .navbar ul{

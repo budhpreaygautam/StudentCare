@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Student Care</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="path/to/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!-- Main Stylesheet -->
+  <link href="CSS/Style.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/AboutUs.css">
+  <link rel="stylesheet" href="CSS/responsive_AU.css">
+
+
+</head>
+
+<body>
+
+
+  <!-- navigation -->
+  <nav class="navbar background h-nav-resp">
+    <div class="logo">
+      <a href="index.html"><img role="img" src="images/logo.png" alt="Logo" /></a>
+      <a class="nav-hero-text" href="index.html">
+        <span style="color: #001B79;">STUDENT</span><span style="color: #1640D6;">CARE</span>
+      </a>
+    </div>
+    <ul class="nav-list v-class-resp">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li class="nav-link">
+        <a href="#">Fellowhips ▼ </a>
+        <div class="dropdown">
+          <ul>
+            <li class="dropdown-link">
+              <a href="#">Indian ►</a>
+              <div class="dropdown second">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="Fellowhips/INDIAN/UG Fellowship.html">UG</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="Fellowhips/INDIAN/PG Fellowship.html">PG</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="Fellowhips/INDIAN/PHD Fellowship.html">P.HD</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-link">
+              <a href="#">Forigner ►</a>
+              <div class="dropdown second">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="Fellowhips/FORIGN/Private.html">Private</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="Fellowhips/FORIGN/Govt.html">GOVT</a>
+                  </li>
+                </ul>
+              </div>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+    <div class="rightNav v-class-resp">
+      <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+        data-bs-target="#loginModal">Register</button>
+    </div>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+
+  <!-- Login-Modal -->
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Login here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+            <h6 class="">You don't have account, <a href="" data-bs-toggle="modal"
+                data-bs-target="#signupModal">Signup</a></h6>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#twitter" />
+              </svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#facebook" />
+              </svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#github" />
+              </svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Signup-Modal -->
+
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Sign up here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="your name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Phone">
+              <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <h6 class="">Back to, <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></h6>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--main section-->
+  <div class="responsive-container-block outer-container">
+    <div class="responsive-container-block inner-container">
+      <p class="text-blk section-head-text">
+        Meet Our Expert Teams
+      </p>
+      <p class="text-blk section-subhead-text">
+        Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments
+        toward organizational objectives. It is the fuel that allows common people to attain uncommon results. <strong>- Andrew
+        Carnegie.</strong>
+      </p>
+      <div class="responsive-container-block">
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img"  src="images/Teams/aakash2.png">
+            </div>
+            <p class="text-blk name">
+              Aakash
+            </p>
+            <!-- <p class="text-blk position">
+              Backend & Data-Collect
+            </p> -->
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/Teams/gautam.png">
+            </div>
+            <p class="text-blk name">
+              Budh Preay Gautam
+            </p>
+            <!-- <p class="text-blk position">
+              Front-End
+            </p> -->
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img"
+                src="/images/Teams/radhika.jpeg">
+            </div>
+            <p class="text-blk name">
+              Radhika
+            </p>
+            <!-- <p class="text-blk position">
+              Data Collect
+            </p> -->
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img"
+                src="images/Teams/abhishek.jpg">
+            </div>
+            <p class="text-blk name">
+              Abhiskek
+            </p>
+            <!-- <p class="text-blk position">
+              Backend & Data-Collect
+            </p> -->
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="footer-bottom">
+      <div class="hero-footer">
+        <div class="row all-foot">
+
+          <div class="col f-sec1">
+            <div class="footer-site-info">2023 © <a href="index.html" target="_blank">Student Care </a></div>
+          </div>
+
+          <div class="col f-sec2">
+            <div id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+              <ul id="footer-menu" class="nav-menu">
+                <li class="menu-item "><a href="#">Support</a></li>
+                <li class="menu-item "><a href="#">Contact Us</a></li>
+                <li class="menu-item "><a href="#">Disclaimer</a></li>
+                <li class="menu-item "><a href="#">Add more</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col scl">
+            <div id="footer-socials">
+              <div class="socials inline-inside socials-colored">
+
+                <a href="#" target="_blank" title="Facebook" class="socials-item">
+                  <i class="fab fa-facebook-f facebook"></i>
+                </a>
+                <a href="#" target="_blank" title="Twitter" class="socials-item">
+                  <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a href="#" target="_blank" title="Instagram" class="socials-item">
+                  <i class="fab fa-instagram instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="YouTube" class="socials-item">
+                  <i class="fab fa-youtube youtube"></i>
+                </a>
+                <a href="#" target="_blank" title="Telegram" class="socials-item">
+                  <i class="fab fa-telegram telegram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+  <script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

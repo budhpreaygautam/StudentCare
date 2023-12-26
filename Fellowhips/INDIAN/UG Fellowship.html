@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Student Care</title>
+    <link rel = "icon" href ="../../images/logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link href="../../CSS/Style.css" rel="stylesheet">
+
+
+</head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar background h-nav-resp">
+      <div class="logo">
+        <a href="../../index.html"><img role="img" src="../../images/logo.png" alt="Logo"/></a>
+        <a class="nav-hero-text" href="../../index.html">
+          <span style="color: #001B79;">STUDENT</span><span style="color: #1640D6;">CARE</span>
+        </a>
+      </div>
+      <ul class="nav-list v-class-resp">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../aboutus.html">About</a></li>
+        <li><a href="../../faq.html">FAQ</a></li>
+        <li>
+          <ul>
+            <li class="nav-link">
+              <a href="#">Fellowhips ▼ </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">Indian ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/UG Fellowship.html">UG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PG Fellowship.html">PG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PHD Fellowship.html">P.HD</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Forigner ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Private.html">Private</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Govt.html">GOVT</a>
+                        </li>
+                      </ul>
+                    </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+  
+      </ul>
+      <div class="rightNav v-class-resp">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Register</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+  <!-- Login-Modal -->
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Login here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+            <h6 class="">You don't have account, <a href="" data-bs-toggle="modal"
+                data-bs-target="#signupModal">Signup</a></h6>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#twitter" />
+              </svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#facebook" />
+              </svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#github" />
+              </svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Signup-Modal -->
+
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Sign up here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="your name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Phone">
+              <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <h6 class="">Back to, <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></h6>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<main class="main-content">
+  <section class="section-padding">
+      <div class="container">
+          <div class="row">
+              <div class="text-center mx-auto">
+                  <h2 class="">UG Fellowship : Indian</h2>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section-item" id="section_2">
+      <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">1. Azim Premji Foundation Fellowship </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          The Foundation’s vision is to contribute towards a more just, equitable, humane and sustainable society.
+                          Its work is focused on India.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          Azim Premji Foundation.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          The Foundation offers the unique opportunity to combine professional growth with social commitment and
+                          purpose.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          tuition fee including Health, Life, and Accident Insurance.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          INR 35,000 per month and other benefits.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          01 year.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://azimpremjifoundation.org/ ">
+                            azimpremjifoundation.org
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Must be a graduate degree in any discipline.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Yes (Must be an Indian citizen.)
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.): </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month): </strong>
+                          Between August and September.
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong></p>
+                        <ul>
+                          <p>Online through the official website of Azim Premji Foundation</p>
+                          <li>• The homepage of the website will open on the screen.</li>
+                          <li>• Click on the apply link</li>
+                          <li>• Once you will click on the link, an application form will open on the screen</li>
+                          <li>• Now, fill in the form with all the required details </li>
+                          <li>• After that upload all the required documents </li>
+                          <li>• Now, review and recheck the application form to avoid any mistakes </li>
+                          <li>• Finally, click on the Submit button to complete the application process</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Written tests, Physical test and Interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application: </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          The age of the candidates must be less than 35 years and They must be proficient in English and one of the
+                          local languages (Hindi, Kannada, Tamil or Telugu).
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">2. SBI Youth for India Fellowship </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          To redress the problems or issues of rural development.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          State Bank of India (SBI).
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          The fellowship is open to highly motivated young professionals or fresh graduates out of college.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          Fellowship, Medical, and Travelling Allowance.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          Monthly stipend of INR 15,000 and other.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          13 Months.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://youthforindia.org/ ">
+                            youthforindia.org
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Must be a graduate.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Applicable for Indian citizens or Overseas Citizens of India.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.): </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month): </strong>
+                          Between March and April.
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong></p>
+                        <ul>
+                          <p>Online through the official website of SBI Youth for India.</p>
+                          <li>• The homepage of the website will open on the screen.</li>
+                          <li>• Click on the apply link</li>
+                          <li>• Once you will click on the link, an application form will open on the screen</li>
+                          <li>• Now, fill in the form with all the required details </li>
+                          <li>• After that upload all the required documents </li>
+                          <li>• Now, review and recheck the application form to avoid any mistakes </li>
+                          <li>• Finally, click on the Submit button to complete the application process</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Application and interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application: </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          The age between 21-32 years.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">3. Ashoka University Young India Fellowship </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          To solve a real-world problem, and learn how to think critically and write effectively.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          Ashoka University, Haryana.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          Offered as a year-long residential postgraduate diploma in Liberal Studies.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          tuition fee.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          Up to full tuition fee waiver.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          02 year.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://www.ashoka.edu.in">
+                            www.ashoka.edu.in
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Candidates having a recognized undergraduate or postgraduate degree in any discipline are eligible.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Yes (Must be an Indian citizen.)
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.): </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month): </strong>
+                          Between March and April.
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong></p>
+                        <ul>
+                          <p>Online through the official website of Ashoka University</p>
+                          <li>• The homepage of the website will open on the screen.</li>
+                          <li>• Click on the apply link</li>
+                          <li>• Once you will click on the link, an application form will open on the screen</li>
+                          <li>• Now, fill in the form with all the required details </li>
+                          <li>• After that upload all the required documents </li>
+                          <li>• Now, review and recheck the application form to avoid any mistakes </li>
+                          <li>• Finally, click on the Submit button to complete the application process</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Application and interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application: </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          They must be below 28 years of age and They must have strong written and verbal communication skills and
+                          also they must have an above-average academic record combined with extra-curricular engagement.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">4. Ravi Sankaran Fellowship Program </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          To provide variable awards to the candidates.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          Inlaks Shivdasani Foundation.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong></p>
+            
+                      </li>
+                      <li style="display: flex; justify-content:space-between;" class="hero-text">
+                        <ul>
+                          <p><strong>For Master’s Degree – </strong></p>
+                          <li>Candidates should hold a bachelor’s degree and
+                            apply for a master’s degree in ecology or
+                            conservation.
+                          </li>
+                        </ul>
+                        <ul>
+                          <p><strong>For Internship – </strong></p>
+                          <li>Candidates should hold a bachelor’s degree.
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong> </p>
+            
+                      </li>
+                      <li style="display: flex; justify-content:space-between;" class="hero-text">
+                        <ul>
+                          <p><strong>Master’s Program </strong></p>
+                          <li>o A fixed stipend</li>
+                          <li>o Full tuition fee waiver</li>
+                          <li>o One-way international travel</li>
+                        </ul>
+                        <ul>
+                          <p><strong> Internship </strong></p>
+                          <li>o A fixed stipend</li>
+                          <li>o Internship fees (if any)</li>
+                          <li>o To-and-fro international travel (with a ceiling amount of USD 1500 for travel)</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          A fixed stipend and other benefits.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          <strong>Master degree:</strong> 1 – 2 years; <strong>Internship: </strong>6 weeks to 1 year.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://www.inlaksfoundation.org ">
+                            www.inlaksfoundation.org
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Candidates having a recognized undergraduate degree in any discipline are eligible.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Yes (Must be an Indian citizen.)
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.): </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month): </strong>
+                          Between March and April.
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong></p>
+                        <ul>
+                          <p>Online through the official website of Inlaks Shivdasani Foundation and via email</p>
+                          <li>• The homepage of the website will open on the screen.</li>
+                          <li>• Click on the apply link</li>
+                          <li>• Once you will click on the link, an application form will open on the screen</li>
+                          <li>• Now, fill in the form with all the required details </li>
+                          <li>• After that upload all the required documents </li>
+                          <li>• Now, review and recheck the application form to avoid any mistakes </li>
+                          <li>• Finally, click on the Submit button to complete the application process</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Application and interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application: </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          Candidates below 30 years of age are eligible.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">5. ICTS – S.N. Bhatt Memorial Excellence Fellowship Program  </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          This program offers an opportunity to undergraduate/ masters students of Science and Engineering to work with faculty and post-doctoral fellows of the Centre and to participate in research at the frontiers of knowledge.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          International Centre for Theoretical Sciences, Tata Institute of Fundamental Research, Bengaluru.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          UG and PG students who are studying in Science, Mathematics, or Engineering courses.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong> 
+                          tuition fee.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          Stipend and accommodation.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          During program.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://www.icts.res.in">
+                            www.icts.res.in
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong> </p>
+                        
+                      </li>
+                      <li class="hero-text">
+                        <ul>
+                          <li>o	Undergraduate students in the third, fourth or fifth year of the program or older are eligible. </li>
+                          <li>o	They must be students of science, mathematics or engineering. </li>
+                          <li>o	Exceptional undergraduates in their second year, Master’s Degree students and those who have completed their undergraduate programme can also apply for this fellowship.</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Applications are invited from both Indian and foreign nationals.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.): </strong>
+                          CV, academic and referee (at least two) details.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month): </strong>
+                          Between December and January.
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong></p>
+                        <ul>
+                          <p></p>
+                          <li>• The homepage of the website will open on the screen.</li>
+                          <li>• Click on the apply link</li>
+                          <li>• Once you will click on the link, an application form will open on the screen</li>
+                          <li>• Now, fill in the form with all the required details </li>
+                          <li>• After that upload all the required documents </li>
+                          <li>• Now, review and recheck the application form to avoid any mistakes </li>
+                          <li>• Finally, click on the Submit button to complete the application process</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Application and interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application: </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+  </section>
+</main>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<footer>
+  <div class="footer-bottom">
+    <div class="hero-footer">
+      <div class="row all-foot">
+            
+        <div class="col f-sec1">
+          <div class="footer-site-info">2023 © <a href="../../index.html" target="_blank">Student Care </a></div>
+        </div>
+            
+        <div class="col f-sec2">
+          <div id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+            <ul id="footer-menu" class="nav-menu">
+              <li class="menu-item "><a href="#">Support</a></li>
+              <li class="menu-item "><a href="#">Contact Us</a></li>
+              <li class="menu-item "><a href="#">Disclaimer</a></li>
+              <li class="menu-item "><a href="#">Add more</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col scl">
+          <div id="footer-socials">
+            <div class="socials inline-inside socials-colored">
+  
+              <a href="#" target="_blank" title="Facebook" class="socials-item">
+                    <i class="fab fa-facebook-f facebook"></i>
+              </a>
+              <a href="#" target="_blank" title="Twitter" class="socials-item">
+                <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a href="#" target="_blank" title="Instagram" class="socials-item">
+                  <i class="fab fa-instagram instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="YouTube" class="socials-item">
+                  <i class="fab fa-youtube youtube"></i>
+                </a>
+                <a href="#" target="_blank" title="Telegram" class="socials-item">
+                  <i class="fab fa-telegram telegram"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

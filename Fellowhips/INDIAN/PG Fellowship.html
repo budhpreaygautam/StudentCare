@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Student Care</title>
+    <link rel = "icon" href ="../../images/logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link href="../../CSS/Style.css" rel="stylesheet">
+
+
+</head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar background h-nav-resp">
+      <div class="logo">
+        <a href="../../index.html"><img role="img" src="../../images/logo.png" alt="Logo"/></a>
+        <a class="nav-hero-text" href="../../index.html">
+          <span style="color: #001B79;">STUDENT</span><span style="color: #1640D6;">CARE</span>
+        </a>
+      </div>
+      <ul class="nav-list v-class-resp">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../aboutus.html">About</a></li>
+        <li><a href="../../faq.html">FAQ</a></li>
+        <li>
+          <ul>
+            <li class="nav-link">
+              <a href="#">Fellowhips ▼ </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">Indian ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/UG Fellowship.html">UG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PG Fellowship.html">PG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PHD Fellowship.html">P.HD</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Forigner ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Private.html">Private</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Govt.html">GOVT</a>
+                        </li>
+                      </ul>
+                    </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+  
+      </ul>
+      <div class="rightNav v-class-resp">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Register</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+  <!-- Login-Modal -->
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Login here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+            <h6 class="">You don't have account, <a href="" data-bs-toggle="modal"
+                data-bs-target="#signupModal">Signup</a></h6>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#twitter" />
+              </svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#facebook" />
+              </svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#github" />
+              </svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Signup-Modal -->
+
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Sign up here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="your name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Phone">
+              <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <h6 class="">Back to, <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></h6>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<main class="main-content">
+  <section class="section-padding">
+      <div class="container">
+          <div class="row">
+              <div class="text-center mx-auto">
+                  <h2 class="">PG Fellowship : Indian</h2>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section-item" id="section_2">
+    <div class="container-fluid">
+      <div class="row">
+  
+        <div class="col-12 col">
+          <div class="custom-text-box c-container">
+            <div class="card">
+              <div class="content">
+                <h2 class="">1. District Development Followship </h2>
+                <ul>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Objective : </strong>
+                      It provides financial support to a talented Tanzanian student to pursue a postgraduate degree in a program
+                      related to Africa and international development.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Provider : </strong>
+                      Govt. of Punjab and Ashoka University
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• What for : </strong>
+                      An opportunity to learn from senior bureaucrats and decision-makers in the State Government.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How many seats : </strong>
+                      N/A
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Nature of assistance</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things covered : </strong>
+                      The telephone, internet, printing, stationery, etc.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Scholarship amount : </strong>
+                      Rs. 8,00,000 per annum.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Duration : </strong>
+                      01 Year
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Apply Link : </strong>
+                      <a href="https://www.ashoka.edu.in/">
+                        ashoka.edu.in
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Qualifications</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Ranking requirement : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Academic qualification : </strong>
+                      You have a bachelor’s degree with at least 2 year of work experience OR you have a postgraduate degree OR
+                      diploma in any discipline. Visit official website link is given above.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Income criteria : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Residential requirement : </strong>
+                      Yes you hold Indian citizenship.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <h5 class="mb-2"> </h5>
+                    <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                      </strong>
+                      Proof of Citizenship (birth certificate), degree certificates, etc.
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Schedule</p>
+                  <li class="hero-text">
+                    <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                      May.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Application procedure : </strong>
+                      N/A
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Rounds : </strong>
+                      Shortlisted candidates are invited for an interview.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How to prepare the best application:</strong>
+                      N/A
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things to keep in mind: </strong>
+                      Proficient in both Hindi and English, with the ability to read and write in both and not more than 30
+                      years of age as of 1st July 2021.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a class="more"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col">
+          <div class="custom-text-box c-container">
+            <div class="card">
+              <div class="content">
+                <h2 class="">2. India Fellow program </h2>
+                <ul>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Objective : </strong>
+                      The Chief Minister Fellowship Program offers the youth an opportunity to be a part of the government.
+                      India Fellow is a transformative social leadership program for young Indians, who are ready to immerse in
+                      grassroots realities and find their true calling.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Provider : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• What for : </strong>
+                      for young Indians to lead social impact projects at grassroots.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How many seats : </strong>
+                      N/A
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Nature of assistance</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things covered : </strong>
+                      The total amount of scholarship available over the duration of the degree programme, will be up to Rs/INR
+                      2 Lakhs.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Scholarship amount : </strong>
+                      Rs. 15000-18000/-
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Duration : </strong>
+                      18 months.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Apply Link : </strong>
+                      <a href="https://indiafellow.org/apply-now/">
+                        indiafellow.org/apply-now
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Qualifications</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Ranking requirement : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Academic qualification : </strong>
+                      Visit official website link is given above.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Income criteria : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Residential requirement : </strong>
+                      Yes you hold Indian citizenship.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <h5 class="mb-2"> </h5>
+                    <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                      </strong>
+                      Proof of Citizenship (birth certificate), degree certificates, etc.
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Schedule</p>
+                  <li class="hero-text">
+                    <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                      May.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Application procedure : </strong>
+                      Visit website.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Rounds : </strong>
+                      Application, Telephonic Conversation and Assessment Day
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How to prepare the best application:</strong>
+                      N/A
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things to keep in mind: </strong>
+                      Age are between 20 to 30 years.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a class="more"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col">
+          <div class="custom-text-box c-container">
+            <div class="card">
+              <div class="content">
+                <h2 class="">3. Chief Minister Fellowship Program </h2>
+                <ul>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Objective : </strong>
+                      The Chief Minister Fellowship Program offers the youth an opportunity to be a part of the government.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Provider : </strong>
+                      Govt. of Maharashtra.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• What for : </strong>
+                      This scholarship scheme is for the students studying in top hundred colleges across India such as IITs and
+                      IIMs.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How many seats : </strong>
+                      N/A
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Nature of assistance</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things covered : </strong>
+                      The total amount of scholarship available over the duration of the degree programme, will be up to Rs/INR
+                      2 Lakhs.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Scholarship amount : </strong>
+                      Any Graduate 75,000 per month.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Duration : </strong>
+                      01 Year.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Apply Link : </strong>
+                      <a href="https://mahades.maharashtra.gov.in/home.do?lang=mr">
+                        mahades.maharashtra.gov.in
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Qualifications</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Ranking requirement : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Academic qualification : </strong>
+                      The candidate should be a graduate from any discipline with minimum 60% marks and at least one year work
+                      experience. Visit official website link is given above.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Income criteria : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Residential requirement : </strong>
+                      Yes you hold Indian citizenship.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <h5 class="mb-2"> </h5>
+                    <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                      </strong>
+                      Proof of Citizenship (birth certificate), degree certificates, etc.
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Schedule</p>
+                  <li class="hero-text">
+                    <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                      February.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Application procedure : </strong>
+                      Visit website.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Rounds : </strong>
+                      Two round (online test, essays and interview).
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How to prepare the best application:</strong>
+                      N/A
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things to keep in mind: </strong>
+                      The age of the candidate has to be between 21 years to 26 years and Applicants should have knowledge of
+                      internet and computer handling.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a class="more"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col">
+          <div class="custom-text-box c-container">
+            <div class="card">
+              <div class="content">
+                <h2 class="">4. Gandhi Fellowship Program </h2>
+                <ul>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Objective : </strong>
+                      The Gandhi Fellowship aims to develop and build on the 21st-century skills that the fellows already
+                      possess or aim to acquire.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Provider : </strong>
+                      Piramal Foundation.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• What for : </strong>
+                      Graduates or postgraduate students.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How many seats : </strong>
+                      N/A
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Nature of assistance</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things covered : </strong>
+                      Monthly phone allowance of rupees 600. <br>
+                      Rent-free accommodation. <br>
+                      Monthly stipend of rupees 14000. <br>
+                      Transport and other allowances as applicable.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Scholarship amount : </strong>
+                      50,000 per month during Year 1 of the programme and 60,000 per month during Year 2 of the programme.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Duration : </strong>
+                      02 Year.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Apply Link : </strong>
+                      <a href="https://gandhifellowship.org/">
+                        gandhifellowship.org
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Qualifications</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Ranking requirement : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Academic qualification : </strong>
+                      Applicant must hold graduation or post-graduation degree in any of the following streams.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Income criteria : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Residential requirement : </strong>
+                      Yes you hold Indian citizenship.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <h5 class="mb-2"> </h5>
+                    <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                      </strong>
+                      Passport,Proof of Citizenship (birth certificate), degree certificates, photograph, etc.
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Schedule</p>
+                  <li class="hero-text">
+                    <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                      March.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Application procedure : </strong>
+                      To apply for the fellowship program students, have to visit the <a
+                        href="https://gandhifellowship.org/">gandhifellowship.org</a>
+                      of the Gandhi fellowship.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Rounds : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How to prepare the best application:</strong>
+                      N/A
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things to keep in mind: </strong>
+                      The age of applicant should be between 18 to 26 years.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a class="more"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col">
+          <div class="custom-text-box c-container">
+            <div class="card">
+              <div class="content">
+                <h2 class="">5. SBI Youth for India Fellowship </h2>
+                <ul>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Objective : </strong>
+                      The Fellowship provides a framework for India’s best minds to join hands with rural communities, empathize
+                      with their struggles and connect with their aspirations.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Provider : </strong>
+                      NGO partners, local government.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• What for : </strong>
+                      an opportunity to go live and work amongst rural communities to help solve pressing rural development
+                      challenges.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How many seats : </strong>
+                      N/A
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Nature of assistance</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things covered : </strong>
+                      Travel, Housing stipend, insurance, internet etc will be up to Rs/INR 3 Lakhs.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Scholarship amount : </strong>
+                      60,000.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Duration : </strong>
+                      13 months.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Apply Link : </strong>
+                      <a href="https://youthforindia.org/">
+                        youthforindia.org
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Qualifications</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Ranking requirement : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Academic qualification : </strong>
+                      Bachelor’s degree should be completed. Visit official website link is given above.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Income criteria : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Residential requirement : </strong>
+                      Yes you hold Indian citizenship.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <h5 class="mb-2"> </h5>
+                    <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                      </strong>
+                      Proof of Citizenship (birth certificate), degree certificates, etc.
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Schedule</p>
+                  <li class="hero-text">
+                    <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                      May.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Application procedure : </strong></p>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>• The homepage of the website will open on the screen.</li>
+                      <li>• Click on the apply link.</li>
+                      <li>• Once you will click on the link, an application form will open on the screen.</li>
+                      <li>• Now, fill in the form with all the required details.</li>
+                      <li>• After that upload all the required documents.</li>
+                      <li>• Now, review and recheck the application form to avoid any mistakes.</li>
+                      <li>• Finally, click on the Submit button to complete the application process.</li>
+                    </ul>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Rounds : </strong>
+                      Registration and Online Assessment, Personal Interview.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How to prepare the best application:</strong>
+                      N/A
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things to keep in mind: </strong>
+                      N/A
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a class="more"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col">
+          <div class="custom-text-box c-container">
+            <div class="card">
+              <div class="content">
+                <h2 class="">6. Mahatma Gandhi National Fellowship </h2>
+                <ul>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Objective : </strong>
+                      MGNF is a Certificate Programme in Public Policy and Management offered by IIMs. It has been designed at
+                      the initiative of the Ministry of Skill Development and Entrepreneurship (MSDE), Government of India
+                      (GOI), and implemented in collaboration with State Skill Development Missions (SSDMs).
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Provider : </strong>
+                      IIMs.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• What for : </strong>
+                      The Mahatma Gandhi National Fellowship (MGNF) is an opportunity for young, dynamic individuals to
+                      contribute to enhancing skill development and promote economic development.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How many seats : </strong>
+                      N/A
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Nature of assistance</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things covered : </strong>
+                      Tuition fee.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Scholarship amount : </strong>
+                      INR 50,000 per month during the first year of joining and then a stipend of 60,000 in the second year.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Duration : </strong>
+                      02 Year.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Apply Link : </strong>
+                      <a href="https://www.iimb.ac.in/mgnf">
+                        www.iimb.ac.in
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Qualifications</p>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Ranking requirement : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Academic qualification : </strong>
+                      Must be a graduate with an interest in working in rural areas.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Income criteria : </strong>
+                      N/A
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Residential requirement : </strong>
+                      Yes you hold Indian citizenship.
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <h5 class="mb-2"> </h5>
+                    <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                      </strong>
+                      Proof of Citizenship (birth certificate), degree certificates, etc.
+                    </p>
+                  </li>
+                </ul>
+        
+                <ul>
+                  <p class="sub-heading">> Schedule</p>
+                  <li class="hero-text">
+                    <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                      Not fixed.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Application procedure : </strong></p>
+                    <ul>
+                      <li>• The homepage of the website will open on the screen.</li>
+                      <li>• Click on the apply link.</li>
+                      <li>• Once you will click on the link, an application form will open on the screen.</li>
+                      <li>• Now, fill in the form with all the required details.</li>
+                      <li>• After that upload all the required documents.</li>
+                      <li>• Now, review and recheck the application form to avoid any mistakes.</li>
+                      <li>• Finally, click on the Submit button to complete the application process.</li>
+                    </ul>
+                  </li>
+                 
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Rounds : </strong>
+                      Application and interview.
+                    </p>
+                  </li>
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• How to prepare the best application:</strong>
+                      N/A
+                    </p>
+                  </li>
+        
+                  <li class="hero-text">
+                    <p><strong class="heading-three">• Things to keep in mind: </strong>
+                      The age limit is 21-30 and 3years of work experience is important but not mandatory.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a class="more"></a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+</main>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<footer>
+  <div class="footer-bottom">
+    <div class="hero-footer">
+      <div class="row all-foot">
+            
+        <div class="col f-sec1">
+          <div class="footer-site-info">2023 © <a href="../../index.html" target="_blank">Student Care </a></div>
+        </div>
+            
+        <div class="col f-sec2">
+          <div id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+            <ul id="footer-menu" class="nav-menu">
+              <li class="menu-item "><a href="#">Support</a></li>
+              <li class="menu-item "><a href="#">Contact Us</a></li>
+              <li class="menu-item "><a href="#">Disclaimer</a></li>
+              <li class="menu-item "><a href="#">Add more</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col scl">
+          <div id="footer-socials">
+            <div class="socials inline-inside socials-colored">
+  
+              <a href="#" target="_blank" title="Facebook" class="socials-item">
+                    <i class="fab fa-facebook-f facebook"></i>
+              </a>
+              <a href="#" target="_blank" title="Twitter" class="socials-item">
+                <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a href="#" target="_blank" title="Instagram" class="socials-item">
+                  <i class="fab fa-instagram instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="YouTube" class="socials-item">
+                  <i class="fab fa-youtube youtube"></i>
+                </a>
+                <a href="#" target="_blank" title="Telegram" class="socials-item">
+                  <i class="fab fa-telegram telegram"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

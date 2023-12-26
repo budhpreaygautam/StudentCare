@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Student Care</title>
+    <link rel = "icon" href ="../../images/logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link href="../../CSS/Style.css" rel="stylesheet">
+
+
+
+</head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar background h-nav-resp">
+      <div class="logo">
+        <a href="../../index.html"><img role="img" src="../../images/logo.png" alt="Logo"/></a>
+        <a class="nav-hero-text" href="../../index.html">
+          <span style="color: #001B79;">STUDENT</span><span style="color: #1640D6;">CARE</span>
+        </a>
+      </div>
+      <ul class="nav-list v-class-resp">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../aboutus.html">About</a></li>
+        <li><a href="../../faq.html">FAQ</a></li>
+        <li>
+          <ul>
+            <li class="nav-link">
+              <a href="#">Fellowhips ▼ </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">Indian ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/UG Fellowship.html">UG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PG Fellowship.html">PG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PHD Fellowship.html">P.HD</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Forigner ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Private.html">Private</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Govt.html">GOVT</a>
+                        </li>
+                      </ul>
+                    </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+  
+      </ul>
+      <div class="rightNav v-class-resp">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Register</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+  </nav>
+
+  <!-- Login-Modal -->
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Login here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+            <h6 class="">You don't have account, <a href="" data-bs-toggle="modal"
+                data-bs-target="#signupModal">Signup</a></h6>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#twitter" />
+              </svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#facebook" />
+              </svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#github" />
+              </svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Signup-Modal -->
+
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Sign up here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="your name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Phone">
+              <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <h6 class="">Back to, <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></h6>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<main class="main-content">
+  <section class="section-padding">
+      <div class="container">
+          <div class="row">
+              <div class="text-center mx-auto">
+                  <h2 class="">Government Fellowship : Abroad</h2>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section-item" id="section_2">
+      <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-12 col">
+                  <div class="custom-text-box c-container">
+                      <div class="card">
+                          <div class="content">
+                              <h2 class="">1. National Overseas Scholarship </h2>
+                              <ul>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•  Objective :   </strong>
+                                      The Ministry of Social Justice and Empowerment launched the National Overseas Scholarship to promote social and economic justice. This scholarship facilitates low-income students from Scheduled Castes, Scheduled Tribes, Landless Agricultural Labourers, and Traditional Artisans to pursue Master's Degrees, Ph.D., and Post-Doctoral courses abroad.
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•  Provider :    </strong>
+                                      Government.
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•  What for :    </strong>
+                                      This scholarship facilitates low-income students from Scheduled Castes, Scheduled Tribes, Landless Agricultural Labourers, and Traditional Artisans to pursue Master's Degrees, Ph.D., and Post-Doctoral courses abroad.
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•  How many seats :  </strong>
+                                      30% of seats are reserved for female candidates.
+                                    </p>
+                                  </li>
+                              </ul>
+      
+                              <ul> <p class="sub-heading">> Nature of assistance</p>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Things covered :    </strong>
+                                      Tuition fees, visa fees, book costs, and living expenses also medical insurance premium, poll tax, Maintenance fee, Contingency allowance, Air tickets and incidental journey allowance.
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Scholarship amount :    </strong>
+                                      N/A
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Duration :  </strong>
+                                      N/A
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Apply Link :  </strong>
+                                      <a href="https://socialjustice.gov.in/schemes/28">
+                                        National Overseas scholarship
+                                      </a>
+                                    </p>
+                                  </li>
+                              </ul>
+      
+                              <ul> <p class="sub-heading">> Qualifications</p>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Ranking requirement :   </strong>
+                                      N/A
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Academic qualification :    </strong>
+                                      The candidate must have scored a minimum of 60% in the qualifying examination. The Bachelor's degree is the qualifying examination for the Master's Degree course, and Master's Degree is the qualifying examination for the Ph.D. courses.
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	 Income criteria :  </strong>
+                                      Family income should be less than INR 8,00,000 in the previous financial year.
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Residential requirement :   </strong>
+                                      Yes
+                                    </p>
+                                  </li>
+                                  <li class="hero-text"> <h5 class="mb-2"> </h5>
+                                    <p><strong class="heading-three moreText">•	Any other (PAN/Bonds etc.): </strong> 
+                                      N/A
+                                    </p>
+                                  </li>
+                              </ul>
+      
+                              <ul> <p class="sub-heading">> Schedule</p>
+                                  <li class="hero-text">
+                                    <p> <strong class="heading-three">•	Advertisement (prospective dates/month): </strong>
+                                      March.
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Application procedure : </strong></p>
+                                    <ul>
+                                      <li>o	Go to the official scholarship portal of the Indian government, link is given above</li>
+                                      <li>o	Register and login.</li>
+                                      <li>o	Access the online form and fill out the application</li>
+                                      <li>o	Documents required are attested copies of testimonials, study program details, photographs, etc.</li>
+                                    </ul>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Rounds : </strong>
+                                      N/A 
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	How to prepare the best application:  </strong>
+                                      N/A
+                                    </p>
+                                  </li>
+                                  <li class="hero-text">
+                                    <p><strong class="heading-three">•	Things to keep in mind:  </strong>
+                                      The candidate should not be more than 35 years old and the scholarship can be awarded to a maximum of two members of the family.                        NOS is a central sector scholarship scheme to facilitate low incomes students belonging to the Scheduled Castes, Denotifie Nomadic and Semi-Nomadic Tribes, Landless Agricultural Labourers and Traditional Artisans categories to obtain higher education abroad.
+                                    </p>
+                                  </li>
+                              </ul>
+                          </div>
+                          <a class="more"></a>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                  <div class="card">
+                      <div class="content">
+                          <h2 class="">2. Erasmus Mundus Joint Master Degree  </h2>
+                          <ul>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Objective :   </strong>
+                                  Erasmus Mundus Joint Master Degrees are Masters's level study programs, EMJM study program is designed and delivered by an international partnership of higher education institutions (HEIs).
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Provider :    </strong>
+                                  Erasmus Mundus.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  What for :    </strong>
+                                  Higher Education.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  How many seats :  </strong>
+                                  Variable
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Nature of assistance</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things covered :    </strong>
+                                  Tuition fees, traveling allowance, Round-trip air travel, insurance premium, and living expenses, job visa after completing Master’s/PhD.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Scholarship amount :    </strong>
+                                  Monthly stipend of u to 1500 Euros.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Duration :  </strong>
+                                  6 academic years, covering at least 4 editions of the master’s programme.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Apply Link :  </strong>
+                                  <a href="https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en">
+                                    erasmus-mundus-catalogue_en
+                                  </a>
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Qualifications</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Ranking requirement :   </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Academic qualification :    </strong>
+                                  The candidate should have a bachelor's degree and relevant work experience.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	 Income criteria :  </strong>
+                                  Yes
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Residential requirement :   </strong>
+                                  The candidate must be an Indian national.
+                                </p>
+                              </li>
+                              <li class="hero-text"> <h5 class="mb-2"> </h5>
+                                <p><strong class="heading-three moreText">•	Any other (PAN/Bonds etc.): </strong> 
+                                  N/A
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Schedule</p>
+                              <li class="hero-text">
+                                <p> <strong class="heading-three">•	Advertisement (prospective dates/month): </strong>
+                                  November to December.
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Application procedure : </strong></p>
+                                <ul>
+                                  <li>o	Go to the official scholarship portal of the Indian government, link is given above</li>
+                                  <li>o	Register and login.</li>
+                                  <li>o	Access the online form and fill out the application</li>
+                                  <li>o	Documents required are attested copies of testimonials, study program details, photographs, etc.</li>
+                                </ul>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Rounds : </strong>
+                                  Interview round.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	How to prepare the best application:  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things to keep in mind:  </strong>
+                                  The candidate should not have resided in any European country for more than a year in the last five years and should not have been awarded a similar scholarship under the Erasmus Mundus Action 2 scheme.
+                                </p>
+                              </li>
+                          </ul>
+                      </div>
+                      <a class="more"></a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                  <div class="card">
+                      <div class="content">
+                          <h2 class="">3. Agatha Harrison Memorial Fellowship  </h2>
+                          <ul>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Objective :   </strong>
+                                  Ms. Agatha Harrison Memorial Fellowship is a fully funded Government scholarship for one candidate to study at St. Antony College, Oxford University London. The fellowship is exclusively administered by the HRD Ministry and is primarily targeted at students interested in pursuing an academic career in History, Political Science, and Economics.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Provider :    </strong>
+                                  The Govt. of India.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  What for :    </strong>
+                                  Higher Education.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  How many seats :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Nature of assistance</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things covered :    </strong>
+                                  Round-trip economy class airfare for the candidate and spouse (if the spouse stays in the U.K. for one year), Stipend, Travel allowance, College lunch allowance.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Scholarship amount :    </strong>
+                                  INR 27 LAKHS.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Duration :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Apply Link :  </strong>
+                                  <a href="https://proposal.sakshat.ac.in/scholarship/index.php/scholarship/scholarship-user/home">
+                                    proposal.sakshat.ac.in
+                                  </a>
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Qualifications</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Ranking requirement :   </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Academic qualification :    </strong></p>
+                                <ul>
+                                  <li>o	The candidate should have scored a minimum of 60% marks at the Master's degree level.</li>
+                                  <li>o	A PhD Degree with a specialization in History, Political Science, or Economics. </li>
+                                  <li>o	The candidate must have a specialization in history, economics, or political science.</li>
+                                  <li>o	The candidate should have at least three years of teaching experience at the Graduate or Postgraduate level.</li>
+                                  <li>o	The candidate should have a Ph.D. degree in the subject field or published works of equal merit.</li>
+                                </ul>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	 Income criteria :  </strong>
+                                  Yes
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Residential requirement :   </strong>
+                                  The candidate must be a permanent citizen of India.
+                                </p>
+                              </li>
+                              <li class="hero-text"> <h5 class="mb-2"> </h5>
+                                <p><strong class="heading-three moreText">•	Any other (PAN/Bonds etc.): </strong> 
+                                  N/A
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Schedule</p>
+                              <li class="hero-text">
+                                <p> <strong class="heading-three">•	Advertisement (prospective dates/month): </strong>
+                                  January.
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Application procedure : </strong></p>
+                                <ul>
+                                  <li>o	Go to the official scholarship portal of the Indian government, link is given above</li>
+                                  <li>o	Register and login.</li>
+                                  <li>o	Access the online form and fill out the application</li>
+                                  <li>o	Documents required are attested copies of testimonials, study program details, photographs, etc.</li>
+                                </ul>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Rounds : </strong>
+                                  Document verification and interview & Merit based.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	How to prepare the best application:  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things to keep in mind:  </strong>
+                                  The candidate should be between 30 to 40 of age.
+                                </p>
+                              </li>
+                          </ul>
+                      </div>
+                      <a class="more"></a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                  <div class="card">
+                      <div class="content">
+                          <h2 class="">4. Fulbright-Nehru Master’s Fellowship  </h2>
+                          <ul>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Objective :   </strong>
+                                  The Fulbright-Nehru Master’s Fellowship is a merit and need-based Indian government scholarship to provide outstanding Indian students an opportunity to pursue a master’s degree program at selected colleges and universities in the U.S.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Provider :    </strong>
+                                  Trust.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  What for :    </strong>
+                                  fellowship for students who have leadership qualities, have done the U.S equivalent bachelor’s degree, and have a minimum of three years of professional work experience.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  How many seats :  </strong>
+                                  Variable.
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Nature of assistance</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things covered :    </strong>
+                                  Funding for tuition fees, living, and other associated expenses, J-1 visa support, Round-trip economy class air travel from the candidate's home city to the U.S., Accident and sickness coverage as per the guidelines of the U.S. government.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Scholarship amount :    </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Duration :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Apply Link :  </strong>
+                                  <a href="https://apply.iie.org/apply/?sr=b29b205d-36bc-44e5-8e02-1d3e90c567a4">
+                                    apply.iie.org
+                                  </a>
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Qualifications</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Ranking requirement :   </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Academic qualification :    </strong>
+                                  The candidate must have a U.S. equivalent bachelor's degree from an acknowledged Indian university with a minimum of 55%mark. The candidates must have a minimum of three year's full-time (paid) professional work experience relevant to the specified field of study. The candidate should have leadership qualities and community service experience.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	 Income criteria :  </strong>
+                                  Yes
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Residential requirement :   </strong>
+                                  yes (The candidate should be an Indian citizen)
+                                </p>
+                              </li>
+                              <li class="hero-text"> <h5 class="mb-2"> </h5>
+                                <p><strong class="heading-three moreText">•	Any other (PAN/Bonds etc.): </strong> </p>
+                                <ul>
+                                  <li>o	Academic transcripts</li>
+                                  <li>o	English language test results</li>
+                                  <li>o	Graduate entry test results</li>
+                                  <li>o	Three letters of reference</li>
+                                  <li>o	Proof of your professional experience</li>
+                                  <li>o	A copy of your passport</li>
+                                </ul>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Schedule</p>
+                              <li class="hero-text">
+                                <p> <strong class="heading-three">•	Advertisement (prospective dates/month): </strong>
+                                  May.
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Application procedure : </strong></p>
+                                <ul>
+                                  <li>o	Go to the official scholarship portal of the Indian government, link is given above</li>
+                                  <li>o	Register and login.</li>
+                                  <li>o	Access the online form and fill out the application</li>
+                                  <li>o	Documents required are attested copies of testimonials, study program details, photographs, etc.</li>
+                                </ul>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Rounds : </strong>
+                                  Merit based & interview.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	How to prepare the best application:  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things to keep in mind:  </strong>
+                                  The candidate must not be enrolled in a U.S. degree program or have another degree from any U.S. university and Besides Fulbright-Nehru Master’s Fellowships, the Indian government also partners with the same foundation to provide two other scholarships.
+                                </p>
+                              </li>
+                          </ul>
+                      </div>
+                      <a class="more"></a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                  <div class="card">
+                      <div class="content">
+                          <h2 class="">5. The JN Tata Endowment – Higher Education of Indians </h2>
+                          <ul>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Objective :   </strong>
+                                  The JN Tata Endowment’s loan scholarship since 1892, when it was established by Jamsetjee Nusserwanjee, the promoter of the Tata group.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Provider :    </strong>
+                                  Trust (JN Tata Endowment).
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  What for :    </strong>
+                                  The J. N. Tata Endowment awards a one-time loan scholarship to Indian students for pursuing full-time Postgraduate, Ph.D., Postdoctoral, and Research fellowships abroad.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  How many seats :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Nature of assistance</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things covered :    </strong>
+                                  Scholarship loan ranging between INR 1,00,000 and INR 10,00,000, Partial travel grant of up to INR 50,000, Gift award worth INR 2,00,000 to INR 7,50,000.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Scholarship amount :    </strong>
+                                  amount ranges between INR 1,00,000 to INR 10,00,000.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Duration :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Apply Link :  </strong>
+                                  <a href="https://jntataendowment.org/">
+                                    jntataendowment.org
+                                  </a>
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Qualifications</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Ranking requirement :   </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Academic qualification :    </strong>
+                                  The candidate must have a graduate degree from a recognized Indian university with a minimum of 60% marks.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	 Income criteria :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Residential requirement :   </strong>
+                                  yes (The candidate should be an Indian citizen)
+                                </p>
+                              </li>
+                              <li class="hero-text"> <h5 class="mb-2"> </h5>
+                                <p><strong class="heading-three moreText">•	Any other (PAN/Bonds etc.): </strong> 
+                                  N/A
+                                </p>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Schedule</p>
+                              <li class="hero-text">
+                                <p> <strong class="heading-three">•	Advertisement (prospective dates/month): </strong>
+                                  April.
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Application procedure : </strong>
+                                  The candidates have to undergo an online test and interview to be eligible for selection. The online test is not subject-specific; it is based on the Thinking Skills Assessment (TSA). The rigorous technical interview evaluates the candidate's understanding of current and future subjects. The final selection depends on the candidate's test score, interview performance, and academic results scores.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Rounds : </strong>
+                                  Document verification and interview.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	How to prepare the best application:  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things to keep in mind:  </strong>
+                                  Candidates who could not avail of the loan scholarship previously are also eligible to apply.
+                                </p>
+                              </li>
+                          </ul>
+                      </div>
+                      <a class="more"></a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                  <div class="card">
+                      <div class="content">
+                          <h2 class="">6. Lady Meherbai D Tata Education Scholarships </h2>
+                          <ul>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Objective :   </strong>
+                                  The Lady Meherbai D Tata Education Trust awards scholarship.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  Provider :    </strong>
+                                  Trust (Lady Meherbai D Education).
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  What for :    </strong>
+                                  scholarships to Indian women graduates supporting their tuition fee for pursuing higher education abroad.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•  How many seats :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Nature of assistance</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things covered :    </strong>
+                                  Tuition fee of up to INR 3,60,000.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Scholarship amount :    </strong>
+                                  INR 3,60,000 as a tuition fee.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Duration :  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Apply Link :  </strong>
+                                  <a href="https://www.tatatrusts.org/upload/pdf/application_format.pdf">
+                                    tatatrusts.org
+                                  </a>
+                                </p>
+                              </li>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Qualifications</p>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Ranking requirement :   </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Academic qualification :    </strong>
+                                  The candidate must be a graduate of a reputed university with an excellent academic record and the candidate must have a minimum of two years of relevant work experience.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	 Income criteria :  </strong>
+                                  Yes (Financial capacity document or income certificate).
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Residential requirement :   </strong>
+                                  yes (The candidate should be an Indian citizen)
+                                </p>
+                              </li>
+                              <li class="hero-text"> <h5 class="mb-2"> </h5>
+                                <p><strong class="heading-three moreText">•	Any other (PAN/Bonds etc.): </strong> 
+                                  N/A
+                                </p>
+                          </ul>
+  
+                          <ul> <p class="sub-heading">> Schedule</p>
+                              <li class="hero-text">
+                                <p> <strong class="heading-three">•	Advertisement (prospective dates/month): </strong>
+                                  March.
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Application procedure : </strong></p>
+                                <ul>
+                                  <li>o	Go to the official scholarship portal of the Indian government, link is given above</li>
+                                  <li>o	Register and login.</li>
+                                  <li>o	Access the online form and fill out the application</li>
+                                  <li>o	Documents required are attested copies of testimonials, study program details, photographs, etc.</li>
+                                </ul>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Rounds : </strong>
+                                  Personal or an online interview.
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	How to prepare the best application:  </strong>
+                                  N/A
+                                </p>
+                              </li>
+                              <li class="hero-text">
+                                <p><strong class="heading-three">•	Things to keep in mind:  </strong>
+                                  The candidate must have applied or secured admission to reputed U.S., U.K., or Europe universities.
+                                </p>
+                              </li>
+                          </ul>
+                      </div>
+                      <a class="more"></a>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+  </section>
+</main>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<footer>
+  <div class="footer-bottom">
+    <div class="hero-footer">
+      <div class="row all-foot">
+            
+        <div class="col f-sec1">
+          <div class="footer-site-info">2023 © <a href="../../index.html" target="_blank">Student Care </a></div>
+        </div>
+            
+        <div class="col f-sec2">
+          <div id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+            <ul id="footer-menu" class="nav-menu">
+              <li class="menu-item "><a href="#">Support</a></li>
+              <li class="menu-item "><a href="#">Contact Us</a></li>
+              <li class="menu-item "><a href="#">Disclaimer</a></li>
+              <li class="menu-item "><a href="#">Add more</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col scl">
+          <div id="footer-socials">
+            <div class="socials inline-inside socials-colored">
+  
+              <a href="#" target="_blank" title="Facebook" class="socials-item">
+                    <i class="fab fa-facebook-f facebook"></i>
+              </a>
+              <a href="#" target="_blank" title="Twitter" class="socials-item">
+                <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a href="#" target="_blank" title="Instagram" class="socials-item">
+                  <i class="fab fa-instagram instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="YouTube" class="socials-item">
+                  <i class="fab fa-youtube youtube"></i>
+                </a>
+                <a href="#" target="_blank" title="Telegram" class="socials-item">
+                  <i class="fab fa-telegram telegram"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Student Care</title>
+    <link rel = "icon" href ="../../images/logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link href="../../CSS/Style.css" rel="stylesheet">
+
+
+</head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar background h-nav-resp">
+      <div class="logo">
+        <a href="../../index.html"><img role="img" src="../../images/logo.png" alt="Logo"/></a>
+        <a class="nav-hero-text" href="../../index.html">
+          <span style="color: #001B79;">STUDENT</span><span style="color: #1640D6;">CARE</span>
+        </a>
+      </div>
+      <ul class="nav-list v-class-resp">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../aboutus.html">About</a></li>
+        <li><a href="../../faq.html">FAQ</a></li>
+        <li>
+          <ul>
+            <li class="nav-link">
+              <a href="#">Fellowhips ▼ </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">Indian ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/UG Fellowship.html">UG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PG Fellowship.html">PG</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/INDIAN/PHD Fellowship.html">P.HD</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Forigner ►</a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Private.html">Private</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="../../Fellowhips/FORIGN/Govt.html">GOVT</a>
+                        </li>
+                      </ul>
+                    </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+  
+      </ul>
+      <div class="rightNav v-class-resp">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Register</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+      <!-- Login-Modal -->
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Login here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Login</button>
+            <h6 class="">You don't have account, <a href="" data-bs-toggle="modal"
+                data-bs-target="#signupModal">Signup</a></h6>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#twitter" />
+              </svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#facebook" />
+              </svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#github" />
+              </svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Signup-Modal -->
+
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Sign up here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="your name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Phone">
+              <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <h6 class="">Back to, <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></h6>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<main class="main-content">
+  <section class="section-padding">
+      <div class="container">
+          <div class="row">
+              <div class="text-center mx-auto">
+                  <h2 class="">PHD Fellowship : Indian</h2>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section-item" id="section_2">
+      <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">1. Prime Minister Fellowship for Doctoral Research </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          The objective of the Prime Minister's Fellowship for Doctoral Research is to support and promote
+                          high-quality research in science and technology. The program aims to nurture talent, encourage innovation,
+                          and contribute to advancements in various STEM fields by providing financial support to outstanding PhD
+                          scholars.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          the government of India, often under the Prime Minister's Office or a related ministry.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          The fellowship is designed to support individuals pursuing doctoral research in science, technology,
+                          engineering, and mathematics (STEM) disciplines.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          100
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          stipends for researchers, research-related expenses, contingency grants, and sometimes travel allowances
+                          for presenting research findings at conferences .
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          Rs. 70,000-80,000.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          aligned with the duration of the Ph.D. program.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://www.serbficci-iirrada.in/PrimeMinisterFellowshipResearch.html">
+                            www.serbficci-iirrada.in/PrimeMinisterFellowshipResearch
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong> </p>
+                      </li>
+                      <li class="hero-text">
+                        <ul>
+                          <li>1. Full time PhD registered with any academic or research institution offering PhD degree.</li>
+                          <li>2. Apply within 14 months of PhD admission/registration whichever date is earlier</li>
+                          <li>3. Complete all required academic qualification in past</li>
+                          <li>4. Have an industry partner to sponsor 50% of the fellowship (Rs.4lakhs per annum)</li>
+                        </ul>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Yes you hold Indian citizenship.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                          </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                          May.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong>
+                          Only online applications through program website will be accepted. Do not send any physical copy of the
+                          application and supporting documents. Candidates may apply for the SERB’s Prime Minister’s Fellowship for
+                          Doctoral Research Scheme at any time of the year at <a
+                            href="www.serbficci-iirrada.in.">www.serbficci-iirrada.in.</a>
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Shortlisted candidates are invited for an interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application:</strong>
+                          N/A
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">2. Jawaharlal Nehru Memorial Fund Scholarships </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          The Jawaharlal Nehru Memorial Fund Scholarships aim to provide financial support to meritorious students
+                          for pursuing higher education in India. The scholarships are designed to assist students in various
+                          academic disciplines and encourage academic excellence.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          Jawaharlal Nehru Memorial Fund.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          These scholarships are awarded to students for pursuing higher studies at the postgraduate level in India.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          18 - 20.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          tuition fees, cost of books, and other related academic costs.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          Between INR 15,000 to INR 18,000 per month.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          up to 2 years.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://www.jnmf.in/sabout.html">
+                            www.jnmf.in/sabout.html
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Visit official website link is given above
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                          </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                          December - May .
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong>
+                          Visit website
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Shortlisted candidates are invited for an interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application:</strong>
+                          N/A
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          Age less than 35 years.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">3. ICHR Junior Research Fellowships (JRF) </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          The primary objective of the ICHR Junior Research Fellowships is to promote historical research in India.
+                          The fellowship aims to support scholars in conducting original and high-quality research in various
+                          aspects of history.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          The Indian Council of Historical Research (ICHR).
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          The fellowships are awarded to scholars to facilitate their research endeavors in the field of history.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          tuition fees.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          16,500-17, 600 per month.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          up to 2 years.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="http://ichr.ac.in/content/innerpage/junior-research-fellowship.php">
+                            junior-research-fellowship
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          online entrance exam based.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Candidates must enroll for PhD in Historical Studies.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Yes
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                          </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                          Novemeber – December .
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong>
+                          Visit website.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Shortlisted candidates are invited for an presentation-cum-interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application:</strong>
+                          N/A
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">4. Maulana Azad National Fellowship </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          The objective of the Maulana Azad Fellowship Scheme (MANF) is to provide five year fellowships in the form
+                          of financial assistance to students from six notified minority communities viz. Buddhist, Christian, Jain,
+                          Muslim, Parsi and Sikh, notified by the Central Government, to pursue M. Phil and Ph.D.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          The fellowship is provided by the Ministry of Minority Affairs, Government of India.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          The fellowship supports students pursuing M.Phil. and Ph.D. degrees by offering financial assistance to
+                          cover various academic expenses such as course fees, maintenance allowance, and other incidental charges.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          vary each year.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          The maintenance allowance is meant to cover living expenses, books, and other academic-related expenses.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          28,000 per month.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          up to 5 years.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="https://www.minorityaffairs.gov.in/show_content.php?lang=1&level=1&ls_id=625&lid=107">
+                            www.minorityaffairs.gov.in
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          Entrance Exam-Based (UGC NET or CSIR NET).
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Must have completed post graduation , Candidates must enroll for PhD from a recognized University/
+                          college.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          Family income must be less than INR 6,00,000 .
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Yes
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                          </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                          twice in a year( June – December).
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong>
+                          Visit website.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Shortlisted candidates are invited for an interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application:</strong>
+                          N/A
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          N/A
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col">
+              <div class="custom-text-box c-container">
+                <div class="card">
+                  <div class="content">
+                    <h2 class="">5. NCERT Doctoral Fellowship for PhD </h2>
+                    <ul>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Objective : </strong>
+                          The objective of the NCERT Doctoral Fellowship is to support scholars pursuing Ph.D. in Education and
+                          allied disciplines. The fellowship aims to promote research in the field of education and contribute to
+                          the improvement of the education system in India.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Provider : </strong>
+                          National Council of Educational Research and Training (NCERT).
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• What for : </strong>
+                          Candidates registered for a Ph.D. degree in a recognized university/ or working toward their Ph.D.
+                          registration are eligible to apply.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How many seats : </strong>
+                          10 - 15.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Nature of assistance</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things covered : </strong>
+                          The Fellow will be provided III AC fare for the travel and accommodation in the RIE hostel.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Scholarship amount : </strong>
+                          23,000-25,000 per month.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Duration : </strong>
+                          up to 3 years.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Apply Link : </strong>
+                          <a href="http://forms.ncert.gov.in/df/">
+                            forms.ncert.gov.in
+                          </a>
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Qualifications</p>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Ranking requirement : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Academic qualification : </strong>
+                          Good Academic record with at least 60% marks at both Graduate and Post Graduate Levels.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Income criteria : </strong>
+                          N/A
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Residential requirement : </strong>
+                          Yes
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <h5 class="mb-2"> </h5>
+                        <p><strong class="heading-three moreText">• Any other (PAN/Bonds etc.):
+                          </strong>
+                          Proof of Citizenship (birth certificate), degree certificates, etc.
+                        </p>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <p class="sub-heading">> Schedule</p>
+                      <li class="hero-text">
+                        <p> <strong class="heading-three">• Advertisement (prospective dates/month):</strong>
+                          November – December.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Application procedure : </strong>
+                          The procedure to shortlist applicants will be designed by NCERT. The shortlisted candidates will be
+                          required to appear for an interview, which may also include a presentation of the proposals.
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Rounds : </strong>
+                          Registration and Online Assessment, Personal Interview.
+                        </p>
+                      </li>
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• How to prepare the best application:</strong>
+                          N/A
+                        </p>
+                      </li>
+            
+                      <li class="hero-text">
+                        <p><strong class="heading-three">• Things to keep in mind: </strong>
+                          Candidates should not be more than 30 years of age as of the last date of receipt of applications.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="more"></a>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+      </div>
+  </section>
+</main>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<footer>
+  <div class="footer-bottom">
+    <div class="hero-footer">
+      <div class="row all-foot">
+            
+        <div class="col f-sec1">
+          <div class="footer-site-info">2023 © <a href="../../index.html" target="_blank">Student Care </a></div>
+        </div>
+            
+        <div class="col f-sec2">
+          <div id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+            <ul id="footer-menu" class="nav-menu">
+              <li class="menu-item "><a href="#">Support</a></li>
+              <li class="menu-item "><a href="#">Contact Us</a></li>
+              <li class="menu-item "><a href="#">Disclaimer</a></li>
+              <li class="menu-item "><a href="#">Add more</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col scl">
+          <div id="footer-socials">
+            <div class="socials inline-inside socials-colored">
+  
+              <a href="#" target="_blank" title="Facebook" class="socials-item">
+                    <i class="fab fa-facebook-f facebook"></i>
+              </a>
+              <a href="#" target="_blank" title="Twitter" class="socials-item">
+                <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a href="#" target="_blank" title="Instagram" class="socials-item">
+                  <i class="fab fa-instagram instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="YouTube" class="socials-item">
+                  <i class="fab fa-youtube youtube"></i>
+                </a>
+                <a href="#" target="_blank" title="Telegram" class="socials-item">
+                  <i class="fab fa-telegram telegram"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="../../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

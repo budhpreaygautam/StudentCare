@@ -202,9 +202,10 @@ html {
 ul {
   list-style: none;
 }
-/* ul.nav-list{
+ul.nav-list{
   padding: 0;
-} */
+  margin:  0;
+}
 /* ul li a{
   color: blue;
 } */

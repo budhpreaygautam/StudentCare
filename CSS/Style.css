@@ -70,8 +70,8 @@ html {
   font-size: large;
   font-weight: 600;
 }
-.nav-list li a:hover{
-  color: #7b7b7b;
+..nav-list li a:hover{
+  border-bottom: 2px solid #fc3434;
 }
 
 .rightNav {

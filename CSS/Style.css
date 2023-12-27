@@ -854,7 +854,7 @@ a.socials-item:hover {
 @media only screen and (max-width: 1140px) {
   .nav-list {
     flex-direction: column;
-    
+
   }
 
   .navbar {
@@ -863,12 +863,13 @@ a.socials-item:hover {
     height: 300px;
 
   }
+
   /* .navbar ul{
     padding: 0px !important;
   } */
 
   .rightNav {
-    text-align:center;
+    text-align: center;
 
   }
 
@@ -893,14 +894,17 @@ a.socials-item:hover {
     height: 550px;
     scroll-behavior: smooth;
   }
+
   .hero-section1-full-height {
     height: 450px;
     max-height: 450px;
   }
+
   #hero-slide .carousel-item {
     height: 450px;
     max-height: 450px;
   }
+
   .carousel-image {
     max-height: 450px;
   }
@@ -947,19 +951,25 @@ a.socials-item:hover {
     height: 250px;
     max-height: 250px;
   }
+
   #hero-slide .carousel-item {
     height: 250px;
     max-height: 250px;
   }
+
   .carousel-image {
     max-height: 250px;
   }
+
   .home-section5 {
     height: 1100px;
   }
 }
 
 @media only screen and (max-width: 581px) {
+  .nav-list li {
+    padding: 0px 0px;
+  }
 
   .home-section4::before {
     height: 53%;
@@ -969,7 +979,8 @@ a.socials-item:hover {
     height: 500px;
     padding: 3rem 2rem;
   }
-  .filter-form{
+
+  .filter-form {
     height: 400px;
     padding-right: 0;
   }
@@ -989,67 +1000,82 @@ a.socials-item:hover {
     height: 500px;
     padding: 2rem 0;
   }
+
   #footer-menu li+li:before {
     border-left: none;
     border-right: none;
   }
+
   .footer-bottom {
-    padding:0;
+    padding: 0;
 
   }
 
 }
 
 @media only screen and (max-width: 440px) {
+
   .hero-section1-full-height {
     height: 180px;
     max-height: 180px;
   }
+
   #hero-slide .carousel-item {
     height: 180px;
     max-height: 180px;
   }
+
   .carousel-image {
     max-height: 180px;
   }
+
   .nav-hero-text {
     font-size: 20px;
     font-weight: 600;
   }
+
   .hero-section {
     height: 540px;
     padding: 0 2rem;
 
   }
-  .filter-form{
+
+  .filter-form {
     height: 420px;
   }
-  #footer-navigation{
+
+  #footer-navigation {
     padding: 0;
   }
-  #footer-menu{
+
+  #footer-menu {
     padding: 0;
   }
-  .f-sec1{
+
+  .f-sec1 {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
   }
+
   .std-img img {
     height: 450px;
+  }
 }
-}
+
 @media only screen and (max-width: 340px) {
   .hero-section {
     height: 470px;
     padding: 0 1rem;
 
   }
-  .filter-form{
+
+  .filter-form {
     height: 400px;
   }
+
   .sub-container {
     padding-top: 60px;
     padding-bottom: 0px;

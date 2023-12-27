@@ -1,7 +1,21 @@
 * {
     font-family: Nunito, sans-serif;
 }
-
+.image{
+    /* background-color: #12192c; */
+    display: flex;
+    border-radius: 12px 0 0 12px;
+}
+.image img{
+height:40vh;
+margin-bottom:80px auto;
+}
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 .text-blk {
     margin-top: 0px;
     margin-right: 0px;

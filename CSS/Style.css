@@ -70,7 +70,7 @@ html {
   font-size: large;
   font-weight: 600;
 }
-..nav-list li a:hover{
+.nav-list li a:hover{
   border-bottom: 2px solid #fc3434;
 }
 

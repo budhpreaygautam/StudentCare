@@ -161,6 +161,15 @@ body {
 }
 
 @media (max-width: 500px) {
+    .img-wrapper {
+    width: 80%;
+    height: 250px;
+    padding: 1rem 1rem;
+    }
+
+  .teams {
+    flex-direction: column-reverse;
+    }
   .wk-mobile-1 {
     width: 8.333333%;
   }

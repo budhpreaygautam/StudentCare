@@ -986,6 +986,12 @@ a.socials-item:hover {
 }
 
 @media only screen and (max-width: 700px) {
+    .c-container {
+    flex-direction: column;
+  }
+  .hero-text{
+    flex-direction: column;
+  }
   .hero-section1-full-height {
     height: 250px;
     max-height: 250px;
@@ -1006,6 +1012,9 @@ a.socials-item:hover {
 }
 
 @media only screen and (max-width: 581px) {
+    .nav-list li {
+    padding: 0px 0px;
+  }
   .nav-list li {
     padding: 0px 0px;
   }
@@ -1053,6 +1062,10 @@ a.socials-item:hover {
 }
 
 @media only screen and (max-width: 440px) {
+    .c-container {
+    padding: 0;
+    margin: 0;
+  }
 
   .hero-section1-full-height {
     height: 180px;
@@ -1105,6 +1118,12 @@ a.socials-item:hover {
 }
 
 @media only screen and (max-width: 340px) {
+    .c-container {
+    flex-direction: column;
+  }
+  .hero-text{
+    flex-direction: column;
+  }
   .hero-section {
     height: 470px;
     padding: 0 1rem;
